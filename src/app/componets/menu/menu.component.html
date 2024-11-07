@@ -2,6 +2,15 @@
     <ul>
         <li><a [routerLink]="['/']">Home</a></li>
         <li><a [routerLink]="['cine']">Cine</a></li>
-        <li> <a [routerLink]="['musica']">Musica</a>></li>
+        <li> <a [routerLink]="['musica']">Musica</a></li>
+        <li> <a [routerLink]="['numeroDoble']">Numero Doble</a></li>
+        <!-- <li> <a [routerLink]="['numeroDoble/69']">Numero Doble 69</a></li>
+        <li> <a [routerLink]="['numeroDoble/73']">Numero Doble 73</a></li>
+        <li> <a [routerLink]="['numeroDoble/1001']">Numero Doble 1001</a></li> -->
+        <li *ngFor="let valor of listaValores">
+            <a [routerLink]="['/numeroDoble',valor]">
+                Numero Doble: {{valor}}
+            </a>
+        </li>
     </ul>
 </div>

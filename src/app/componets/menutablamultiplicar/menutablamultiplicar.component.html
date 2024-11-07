@@ -1,0 +1,12 @@
+<div>
+<!-- <div *ngIf="listaNumeros.length>0"> -->
+    <ul>
+        <li *ngFor="let numero of listaNumeros">
+            <a [routerLink]="['/tablamultiplicar',numero]">
+                TablaMultiplicar de {{numero}}
+            </a>
+        </li>
+    </ul>
+<!-- </div> -->
+
+</div>
